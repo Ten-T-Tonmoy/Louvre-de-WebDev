@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+      <h1 class="text-3xl mt-10 font-bold text-center text-blue-500 mb-4">
+        Weather Forecast Using API
+      </h1>
+      <p class="text-xl font-mono text-gray-700 text-center">
+        just trynna fetch some goofy ahh apis
+      </p>
+
+      <!-- place to enter city name for search -->
+      <form
+        class="form text-center mt-6 flex-wrap items-center justify-center flex"
+      >
+        <input
+          class="inp w-[30vh] font-mono text-center h-12 rounded-lg"
+          placeholder="Enter City Name "
+        />
+        <button
+          class="go px-6 py-3 bg-blue-500 text-white rounded-lg scale-100 hover:bg-blue-700 hover:scale-105 ease-in-out"
+        >
+          Click me now beach
+        </button>
+      </form>
+    </div>
+    <div
+      class="box bg-gradient-to-b from-orange-400 via-red-400 to-blue-400 text-white font-sans rounded-lg m-6 flex flex-col items-center"
+    >
+      <h1 class="city font-bold text-[5rem]"></h1>
+      <p class="temp text-[3rem]"></p>
+      <p class="humidity text-[2.5rem]"></p>
+      <p class="desc text-[2.5rem]"></p>
+      <p class="emoji text-[3rem]"></p>
+      <p class="error text-[2.5rem] m-4">Please Enter a valid City name.</p>
+    </div>
+    <!-- Correct script tag -->
+    <script src="index.js"></script>
+  </body>
+</html>
 
